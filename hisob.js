@@ -17,4 +17,4 @@ hisob.ayrish = (a, b) => {
 
 };
 
-module.exports = hisob;
+module.exports = hisob;    //   bu bizga maulum bir modulladan kelyapti 

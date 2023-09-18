@@ -1,15 +1,13 @@
-function countLetter(harf, soz) {            //ikkita parametrli funksiya elon qildik
-    let sanash = 0;                            // sanash ozgaruchisi orqali qoshib boradi
-    
-    
-    for (let i = 0; i < soz.length; i++) {         //   for operatoi orqali pastta berilgan                                                                                           // argumentni uzunligi boyicha harfma harf                                                                                           //  tekshiradi agar topsa sanashga 1 ta qoshib qoyadi
-      if (soz[i] === harf) {
-        sanash++;
-      }
-    }
-    
-    return sanash;
-  }
+const  tekshir = (matn1, matn2) => {
+ 
+
+  const qosh1 = matn1.split('').sort();
   
-  const natija = countLetter("a", "abrahm, anvar, akmal"); // bu yerda natija ozgaruchisiga argumentlarimizni beramiz 
-  console.log(natija);                                      /// va log qilib natijani olamiz
+  const qosh2 = matn2.split('').sort();
+
+  
+  return qosh1.join('') === qosh2.join('');
+}
+
+
+console.log(tekshir("abababa", "abababa")); 
